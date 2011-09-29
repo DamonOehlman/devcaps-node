@@ -1,0 +1,29 @@
+{
+    "name": "connect-devcaps",
+    "description": "Devcaps implementation built for express and connect",
+    "tags": ["devcaps", "express", "connect"],
+    "author": "Damon Oehlman <damon.oehlman@sidelab.com>",
+    "version": "0.0.1",
+    "main": "lib/devcaps",
+    
+    "engines": { "node": "0.4.x || 0.5.x" },
+    
+    "dependencies": {
+    },
+    
+    "devDependencies": {
+        "vows": "0.5.x",
+    },
+    
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/devcaps/connect-devcaps.git"
+    },
+    
+    "bugs": {
+        "web": "http://github.com/devcaps/connect-devcaps/issues"
+    },
+
+    "contributors": [
+    ]
+}
