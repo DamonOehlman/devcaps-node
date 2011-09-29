@@ -8,11 +8,13 @@
     
     "engines": { "node": "0.4.x || 0.5.x" },
     
-    "dependencies": {
+    "dependencies": { 
+        "connect": ">= 0.2.4",
+        "b64": "1.x.x"
     },
     
     "devDependencies": {
-        "vows": "0.5.x",
+        "vows": "0.5.x"
     },
     
     "repository": {
