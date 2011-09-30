@@ -2,6 +2,8 @@
 
 This is a [devcaps](/devcaps/devcaps) reference implementation designed to be compatible with [Connect](http://senchalabs.github.com/connect) and [Express](http://expressjs.org/).
 
+For information on the general devcaps process, see the [devcaps repo](/devcaps/devcaps).
+
 ## Getting Started
 
 Firstly, install from npm:
