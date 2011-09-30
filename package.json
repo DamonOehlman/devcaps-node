@@ -9,8 +9,7 @@
     "engines": { "node": "0.4.x || 0.5.x" },
     
     "dependencies": { 
-        "connect": ">= 0.2.4",
-        "b64": "1.x.x"
+        "connect": ">= 0.2.4"
     },
     
     "devDependencies": {
