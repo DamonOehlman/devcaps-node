@@ -2,8 +2,11 @@ var connect = require('connect'),
     app = connect.createServer(),
     devcaps = require('../lib/devcaps');
     
+// initialise the cookie parser and body parser as they are required for devcaps to work
 app.use(connect.cookieParser());
 app.use(connect.bodyParser());
+
+// initialise devcaps detection for all checks
 app.use(devcaps.checkFor());
 
 app.use(function(req, res, next) {
