@@ -37,6 +37,20 @@ For instance, to install devcaps just checking for screen data and the flexbox i
 ```js
 app.use(devcaps.checkFor('screen flexbox'));
 ```
+## Accessing devcaps data
+
+Once the devcaps middleware has been installed, a `devcaps` object will be patched into the request object:
+
+```js
+app.use(function(req, res, next) {
+    if (req.devcaps.screen.width > 480) {
+        // render desktop template
+    }
+    else {
+        // render mobile page
+    }
+});
+```
 
 ## Roadmap
 
