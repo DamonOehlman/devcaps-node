@@ -10,9 +10,31 @@ app.use(connect.bodyParser());
 app.use(devcaps.checkFor());
 
 app.use(function(req, res, next) {
-    var capsData = JSON.stringify(req.devcaps);
+    var screen = req.devcaps.screen;
     
-    res.end('<html><h2>Device Caps (Server Generated HTML)</h2><p>' + capsData + '</p><h2>Actions</h2><p><a href="/random">test</a>&nbsp;<a href="/?reset">reset</a></p></html>');
+    // NOTE: we don't normally code like this :)
+    // though it is delightfully old school...
+    res.end(
+        '<html>' + 
+        '<head>' +
+        '<title>DevCaps Demo</title>' + 
+        '<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>' + 
+        '<style type="text/css">' + 
+        'body { font-family: Helvetica, Arial; margin: 0px; } ' + 
+        '#testy { background: #333; color: white; position: absolute; top: 10px; left: 10px; width: ' + (screen.width - 20) + 'px; height: ' + (screen.height - 20) + 'px; } ' +
+        '#testy > * { margin: 10px; } ' + 
+        'pre { font-size: 1.3em; } ' +
+        '</style>' + 
+        '</head>' + 
+        '<body>' + 
+        '<div id="testy">' +
+        '<h2>Device Caps (Server Generated HTML)</h2>' + 
+        '<p>You are running ' + screen.width + 'px * ' + screen.height + 'px </p>' + 
+        '<pre>' + JSON.stringify(req.devcaps, null, 2) + '</pre>' + 
+        '</div>' + 
+        '</body>' +
+        '</html>'
+    );
 });
 
 app.listen(process.env.NODE_ENV === 'production' ? 80 : 3000);
