@@ -30,7 +30,7 @@ app.use(function(req, res, next) {
         '<body>' + 
         '<div id="testy">' +
         '<h2>Device Caps (Server Generated HTML)</h2>' + 
-        '<p>You are running ' + screen.width + 'px * ' + screen.height + 'px </p>' + 
+        '<p>You\'re device has a resolution of ' + screen.width + 'px * ' + screen.height + 'px </p>' + 
         '<pre>' + JSON.stringify(req.devcaps, null, 2) + '</pre>' + 
         '</div>' + 
         '</body>' +
