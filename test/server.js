@@ -18,7 +18,8 @@ app.use(function(req, res, next) {
         '<html>' + 
         '<head>' +
         '<title>DevCaps Demo</title>' + 
-        '<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>' + 
+        '<meta name="handheldfriendly"/> ' + 
+        '<meta name="viewport" content="width=' + screen.width + '; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>' + 
         '<style type="text/css">' + 
         'body { font-family: Helvetica, Arial; margin: 0px; } ' + 
         '#testy { background: #333; color: white; position: absolute; top: 10px; left: 10px; width: ' + (screen.width - 20) + 'px; height: ' + (screen.height - 20) + 'px; } ' +
