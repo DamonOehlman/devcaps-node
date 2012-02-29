@@ -15,4 +15,4 @@ app.use(function(req, res, next) {
     res.end('<html><h2>Device Caps (Server Generated HTML)</h2><p>' + capsData + '</p><h2>Actions</h2><p><a href="/random">test</a>&nbsp;<a href="/?reset">reset</a></p></html>');
 });
 
-app.listen(3000);
+app.listen(process.env.NODE_ENV === 'production' ? 80 : 3000);
