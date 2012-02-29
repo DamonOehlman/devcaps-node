@@ -9,20 +9,20 @@
     "engines": { "node": "0.4.x || 0.5.x" },
     
     "dependencies": { 
-        "connect": ">= 0.2.4"
+        "connect": "2.x.x"
     },
     
     "devDependencies": {
-        "vows": "0.5.x"
+        "interleave": "0.1.x"
     },
     
     "repository": {
         "type": "git",
-        "url": "http://github.com/devcaps/connect-devcaps.git"
+        "url": "http://github.com/DamonOehlman/devcaps-node.git"
     },
     
     "bugs": {
-        "web": "http://github.com/devcaps/connect-devcaps/issues"
+        "url": "http://github.com/DamonOehlman/devcaps-node/issues"
     },
 
     "contributors": [
