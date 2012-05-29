@@ -13,7 +13,7 @@
     },
     
     "devDependencies": {
-        "interleave": "0.1.x"
+        "interleave": "0.4.x"
     },
     
     "repository": {

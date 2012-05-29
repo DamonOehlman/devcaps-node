@@ -1,4 +1,4 @@
-//= lib/modernizr.custom
+//= lib/modernizr.custom.js
 
 DETECTOR = function(opts) {
     // initialise options

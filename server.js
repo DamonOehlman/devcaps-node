@@ -1,6 +1,7 @@
 var connect = require('connect'),
+    config = require('config'),
     app = connect.createServer(),
-    devcaps = require('../lib/devcaps');
+    devcaps = require('./lib/devcaps');
     
 // initialise the cookie parser and body parser as they are required for devcaps to work
 app.use(connect.cookieParser());
@@ -38,4 +39,4 @@ app.use(function(req, res, next) {
     );
 });
 
-app.listen(process.env.NODE_ENV === 'production' ? 80 : 3000);
+app.listen(config.port);
