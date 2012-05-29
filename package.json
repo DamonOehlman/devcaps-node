@@ -1,30 +1,34 @@
 {
-    "name": "connect-devcaps",
-    "description": "Devcaps implementation built for express and connect",
-    "tags": ["devcaps", "express", "connect"],
-    "author": "Damon Oehlman <damon.oehlman@sidelab.com>",
-    "version": "0.0.1",
-    "main": "lib/devcaps",
-    
-    "engines": { "node": "0.4.x || 0.5.x" },
-    
-    "dependencies": { 
-        "connect": "2.x.x"
-    },
-    
-    "devDependencies": {
-        "interleave": "0.4.x"
-    },
-    
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/DamonOehlman/devcaps-node.git"
-    },
-    
-    "bugs": {
-        "url": "http://github.com/DamonOehlman/devcaps-node/issues"
-    },
-
-    "contributors": [
-    ]
+  "name": "devcaps",
+  "description": "Devcaps implementation built for express and connect",
+  "tags": [
+    "devcaps",
+    "express",
+    "connect"
+  ],
+  "author": "Damon Oehlman <damon.oehlman@sidelab.com>",
+  "version": "0.0.1-1",
+  "main": "lib/devcaps",
+  "engines": {
+    "node": "0.6.x"
+  },
+  "dependencies": {
+    "connect": "2.x.x",
+    "config": "0.4.x"
+  },
+  "devDependencies": {
+    "interleave": "0.4.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/DamonOehlman/devcaps-node.git"
+  },
+  "bugs": {
+    "url": "http://github.com/DamonOehlman/devcaps-node/issues"
+  },
+  "contributors": [],
+  "subdomain": "devcaps",
+  "scripts": {
+    "start": "server.js"
+  }
 }
