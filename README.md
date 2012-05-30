@@ -1,6 +1,8 @@
 # connect-devcaps
 
-This is a [devcaps](/devcaps/devcaps) reference implementation designed to be compatible with [Connect](http://senchalabs.github.com/connect) and [Express](http://expressjs.org/).
+__NOTE:__ This repository has been deprecated, and has been replaced by the main [devcaps](/DamonOehlman/devcaps) repository which now contains an implementation for Node.
+
+This is a [devcaps](/DamonOehlman/devcaps) reference implementation designed to be compatible with [Connect](http://senchalabs.github.com/connect) and [Express](http://expressjs.org/).
 
 For information on the general devcaps process, see the [devcaps repo](/devcaps/devcaps).
 
